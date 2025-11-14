@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #0a32e4; /* Rich Blue - used for buttons and accents */
+  --secondary-color: #f5f8ff; /* Soft Light Blue - used for background sections */
+  --main-color: #ffffff; /* White - main content panels */
+  --fontHeading: "Roboto", sans-serif;
+  --fontParagraph: "Poppins", sans-serif;
+  --newColor: #f9f9f9;
+  --primaryText: #1b1b1b; /* Strong neutral text */
+  --secondaryText: #666666; /* Muted gray text */
+  --thirdColor: #91c2cf; /* Accent text or border highlight */
+  --buttonColor: #0a32e4; /* Call-to-action buttons */
+  --footerBackground: #0e0e2c; /* Deep navy for footer */
+  --footerText: #cccccc; /* Light gray for footer text */
+  --buttonHover: #003366; /* Hover color for buttons */
+}
+
+.navbar {
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #000;
+    background-color: var(--thirdColor);
+    border-radius: 13px;
+    /* background-color: ; */
+}
+
+.navbar .l-logo {
+    display: flex;
+}
+
+.navbar .l-logo a {
+    text-decoration: none;
+    color: black;
+    padding-left: 30px;
+    /* padding-top: 10px; */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.navbar .nav-items {
+    display: flex;
+
+}
+
+.nav-items ul {
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+.nav-items ul li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 19px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.hero-sec {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    /* margin-top: 120px; */
+    padding-top: 130px;
+}
+
+.hero-sec, .hero-text {
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;        
+}
+
+ .btn {
+    padding: 20px;
+    background-color: var(--buttonColor);
+    border-radius: 13px;
+    color: var(--main-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.hero-sec .hero-hire {
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.hero-se, .hero-img img {
+ width: 300px;
+ height: 300px;
+ border-radius: 15px;
+}
+
+/* aboutus section */
+
+
+/* .about  */
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 120px;
+    padding-left: 120px;
+}
+
+.about .aboutus {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about .aboutus .aboutus-text {
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;        
+}
+
+.aboutus-img img {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+
+}
+
+.aboutus-text h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.skill-sec {
+    margin-top: 120px;
+    /* padding-bottom: 30px; */
+}
+
+.skill-cont .skill-sec-text {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 20px;
+}
+
+.skill-cont .skills-sec .html> .css > .javascript > .bootstrap, img {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+}
+
+.skills-h3 h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
