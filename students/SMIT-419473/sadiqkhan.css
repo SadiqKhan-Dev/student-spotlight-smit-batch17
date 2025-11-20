@@ -1,3 +1,47 @@
+/* ================================
+   Global Root Variables
+================================ */
+:root {
+  /* Colors */
+  --primary-color: #4b7bec;
+  --primary-dark: #3867d6;
+  --secondary-color: #a5b1c2;
+  --light-color: #f5f6fa;
+  --dark-color: #1e272e;
+  --text-color: #2f3640;
+  --white: #ffffff;
+
+  /* Background Colors */
+  --bg-main: #ffffff;
+  --bg-secondary: #f1f2f6;
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #4b7bec, #3867d6);
+  --gradient-dark: linear-gradient(135deg, #1e272e, #2f3640);
+
+  /* Typography */
+  --font-family: "Poppins", sans-serif;
+  --font-family-secondary: "Roboto", sans-serif;
+
+  --h1-size: 3rem;
+  --h2-size: 2.2rem;
+  --h3-size: 1.6rem;
+  --text-size: 1rem;
+  --small-text: 0.9rem;
+
+  /* Spacing */
+  --section-padding: 80px 20px;
+  --container-width: 1200px;
+
+  /* UI */
+  --radius: 12px;
+  --circle-radius: 50%;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.08);
+
+  /* Transition */
+  --transition: 0.3s ease-in-out;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -40,7 +84,7 @@ li {
     padding-right: 30px;
 }
 
-button  {
+/* button  {
     cursor: pointer;
     border: 1px solid var(--accent) !important;
     color: var(--accent) !important;
@@ -48,7 +92,7 @@ button  {
     height: 80px;
     border-radius: 10px;
     background-color: #000 !important
-}
+} */
 
 img {
     width: 100px;
@@ -97,7 +141,8 @@ p {
 
 .navbar .l-logo a {
     text-decoration: none;
-    color: black;
+    color: var(--accent);
+    /* color: black; */
     padding-left: 30px;
     /* padding-top: 10px; */
     font-family: 'Poppins', sans-serif;
@@ -126,27 +171,37 @@ p {
 
 .hero-sec {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     text-align: center;
     align-items: center;
     /* margin-top: 120px; */
+    /* line-height: 40px; */
     padding-top: 130px;
 }
 
-.hero-sec,
-.hero-text {
-    padding-top: 100px;
+.hero-sec {
+    padding-top: 120px;
     padding-left: 100px;
     padding-right: 100px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    line-height: 40px;
+}
+
+.hero-text {
+    padding-top: 120px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 30px;
 }
 
 .btn {
     padding: 20px;
-    background-color: var(--buttonColor);
+    background-color: var(--) !important;
     border-radius: 13px;
-    color: var(--main-color);
+    color: var(--main-color) !important;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
@@ -219,7 +274,7 @@ p {
     padding: 20px;
     /* border: 2px solid #000; */
     border-radius: 15px;
-    background: #fff;
+    background: var(--);
 }
 
 /* Header Box */
