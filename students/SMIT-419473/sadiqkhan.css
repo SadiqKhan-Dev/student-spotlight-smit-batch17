@@ -117,6 +117,13 @@ p {
     color: var(--muted);
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+  font-family: var(--font-family);
+}
+
 .navbar {
     /* padding: 5px; */
     /* padding-left: 10px;
@@ -199,7 +206,7 @@ p {
 
 .btn {
     padding: 20px;
-    background-color: var(--) !important;
+    background-color: var(--bg-main) !important;
     border-radius: 13px;
     color: var(--main-color) !important;
     font-family: 'Poppins', sans-serif;
@@ -293,7 +300,7 @@ p {
 }
 
 /* Card Boxes */
-.div2, .div3, .div4, .div5 {
+.div2, .div3, .div4, .div5, .div6, .div7 {
     background: #fff;
     border: 2px solid #679eb8;
     border-radius: 15px;
@@ -308,8 +315,9 @@ p {
     transition: 0.3s ease-in-out;
 }
 
+
 /* Text Styling */
-.div2 p, .div3 p, .div4 p, .div5 p {
+.div2 p, .div3 p, .div4 p, .div5 p, .div6 p, .div7 p {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 1.1rem;
@@ -317,23 +325,50 @@ p {
 }
 
 /* Image Size */
-.div2 img, .div3 img, .div4 img, .div5 img {
+.div2 img, .div3 img, .div4 img, .div5 img, .div6 img, .div7 img {
     width: 90px;
     height: 90px;
 }
 
 /* Grid Placement */
-.div2 { grid-column: 1 / 3; grid-row: 2 / 4; }
-.div3 { grid-column: 3 / 5; grid-row: 2 / 4; }
-.div4 { grid-column: 5 / 7; grid-row: 2 / 4; }
-.div5 { grid-column: 3 / 5; grid-row: 4 / 6; }
+.div2 {
+  grid-column: 1 / 3;
+  grid-row: 2 / 4;
+}
+
+.div3 {
+  grid-column: 3 / 5;
+  grid-row: 2 / 4;
+}
+
+.div4 {
+  grid-column: 5 / 7;
+  grid-row: 2 / 4;
+}
+
+.div5 {
+  grid-column: 3 / 5;
+  grid-row: 4 / 6;
+}
+
+.div6 {
+  grid-column: 4 / 6;
+  grid-row: 2 / 4;
+}
+
+.div7 {
+  grid-column: 5 / 7;
+  grid-row: 4 / 6;
+}
 
 /* Hover Effects */
 .div1:hover,
 .div2:hover,
 .div3:hover,
 .div4:hover,
-.div5:hover {
+.div5:hover,
+.div6:hover,
+.div7:hover {
     transform: translateY(-7px);
     border-color: #0077ff;
     box-shadow: 0px 8px 20px rgba(0, 119, 255, 0.25);
@@ -343,7 +378,10 @@ p {
 .div2:hover img,
 .div3:hover img,
 .div4:hover img,
-.div5:hover img {
+.div5:hover img,
+.div6:hover img,
+.div7:hover img
+ {
     transform: scale(1.15);
     transition: 0.3s ease-in-out;
 }
@@ -364,168 +402,30 @@ p {
 
 
 
-/* .parent {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 8px;
-    margin:auto;
-    max-width: 1500px;
-    margin-bottom: 140px;
-    height: 120vh;
-    width: 1200px;
-    margin-top: 300px;
-    border: 1px solid #000;
-}
-
-.div1 {
-    grid-column: span 6 / span 6;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    border: 1px solid #000;
-    border-radius: 15px;
-    margin: auto;
-    max-width: 1000px;
-    width: 80%;
-    padding: 20px;
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 1.2rem;
-}
-
-
-
-.div2, .div3, .div4, .div5 {
-    width: 200px;
-    height: 200px;
-    border-radius: 15px;
-    border: 1px solid #000;
-    padding: 20px;
-    margin-right: 20px;
-    margin-left: 60px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-
-.div2, .div3, .div4, .div5, p {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 1.2rem;
-    padding-top: 20px;
-}
-
-
- img {
-    width: 100px;
-    height: 100px;
-}
-
-.div2 {
-    grid-column: span 2 / span 2;
-    grid-row: span 2 / span 2;
-    grid-row-start: 2;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-
-.div3 {
-    grid-column: span 2 / span 2;
-    grid-row: span 2 / span 2;
-    grid-column-start: 3;
-    grid-row-start: 2;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-
-.div4 {
-    grid-column: span 2 / span 2;
-    grid-row: span 2 / span 2;
-    grid-column-start: 5;
-    grid-row-start: 2;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-
-.div5 {
-    grid-column: span 2 / span 2;
-    grid-row: span 2 / span 2;
-    grid-column-start: 3;
-    grid-row-start: 4;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-} */
-
-
-
-
-/* .skill-sec {
-    margin-top: 120px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.skill-sec h3 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-}
-
-.skill-cont .skill-sec-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5.2rem;
-
-    text-align: center;
-    font-size: 20px;
-}
-
-.skill-cont .skills-sec .html> .css > .javascript > .bootstrap, img {
-    width: 100px;
-    height: 100px;
-    border-radius: 15px;
-}
-
-.skills-h3 h3 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    padding-bottom: 10px;
-} */
-
-
-/* .services {
+.services {
     padding-top: 150px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
-    max-width: 800px;
+    max-width: 1500px;
+    width: 1200px;
     margin: auto;
+}
+
+.services .services-heading {
+    font-size: var(--text-size);
 }
 
 
 .services-cards {
+    padding-left: 140px;
+    gap: 5rem;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    gap: 8px;
+    grid-template-rows: auto;
+    padding-top: 80px;
 }
     
 .services-cards .card {
@@ -534,4 +434,43 @@ p {
     align-items: center;
     text-align: center;
     padding: 20px;
-} */
+}
+
+.card1 h4, .card2 h4, .card3 h4{
+    padding-top: 30px;
+    border-radius: var(--fw-heading);
+}
+.card1 p, .card2 h4, .card3 h4{
+    padding-top: 30px;
+    border-radius: var(--fw-heading);
+}
+
+.card1 img, .card2 img, .card3 img{
+    width: 300px;
+    height: 250px;
+    border-radius: var(--fw-heading);
+}
+
+.card1 .card-btn, .card2 .card-btn, .card3 .card-btn {
+    padding: 15px;
+    border-radius: var(--radius);
+    font-size: 1.2rem;
+    margin-top: 10px;
+    background-color: var(--accent);
+
+}
+.project {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.project-heading h2 {
+    text-align: center;
+}
+
+.project-cont {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 40px;
+}
