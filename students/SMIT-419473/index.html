@@ -41,12 +41,13 @@
         </div>
         <div class="nav-items">
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Skills</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#aboutus">About</a></li>
+                <li><a href="#skill">Skills</a></li>
                 <li><a href="#service">Services</a></li>
-                <li>Projects</li>
-                <li>Contact Me</li>
+                <li><a href="#projects">Projects</a></li>
+                <li> <a href="#certificate">Certificate</a></li>
+                <li><a href="#contact">Contact Me</a></li>
             </ul>
         </div>
     </div>
@@ -60,7 +61,7 @@
 
                 <button class="btn" onclick="window.open('https://github.com/sadiqkhan-dev')">Hire Me</button>
                 <!-- <button class="btn" onclick="window.open(./assets/document/Muhammad-Sadiq-CV-Update2)">Download Resume</button> -->
-                <a class="btn" href="./assets/document/Muhammad-Sadiq-CV-Update2" download="">Download Resume</a>
+                <a class="btn" href="./assets/document/Muhammad-Sadiq-Khan-ATS-Resume.docx" download="">Download Resume</a>
 
             </div>
             <div class="hero-img">
@@ -86,7 +87,7 @@
         <!-- Skills Section -->
 
 
-<div class="skill-parent">
+<div class="skill-parent" id="skill">
     <div class="div1">
         <h2>My Tech Stack In Smit</h2></div>
     <div class="div2">
@@ -190,8 +191,8 @@
                 </div>
                 <div class="pro-card4">
                     <img src="./Assets/project-img/project-4.PNG" alt="">
-                    <p class="pro-sec">Trucking and Shipping</p>
-                    <p class="pro-main">Team Project of Git contrubution</p> 
+                    <p class="pro-sec">Sol Plant </p>
+                    <p class="pro-main">Assigment of Sol Plant Website Landing Page</p> 
                     <div class="pro-btn"> 
                         <button onclick="window.open('https://github.com/SadiqKhan-Dev/solplant.netlify.app', '_blank')">Gtihub</button>
                         <button onclick="window.open('https://solplant-netlify-app-377g.vercel.app/', '_blank')">Live Project</button>
@@ -199,21 +200,162 @@
                 </div>
             </div>
            </section>
+ 
+ 
+        <!-- Badges Section -->
 
-        <!-- badges   certifications-->
+ <section class="badg-cert" id="certificate">
+
+    <!-- Buttons -->
+    <div class="toggle-buttons">
+        <button class="tab-btn active" data-tab="badges">Badges</button>
+        <button class="tab-btn" data-tab="certifications">Certifications</button>
+    </div>
+
+    <!-- BADGES SECTION -->
+    <div id="badges" class="tab-content active">
+        <h2>Badges</h2>
+        <p class="tab-para">
+            These badges represent achievements earned after completing different modules and assignments.
+        </p>
+
+        <div class="badg-cont">
+            <div class="badge-item">
+                <img src="./Assets/badge-img/badge-1.png" alt="">
+                <h4>Frontend Badge</h4>
+                <p>HTML, CSS, Responsive Design</p>
+            </div>
+
+            <div class="badge-item">
+                <img src="./Assets/badge-img/badge-2.png" alt="">
+                <h4>JavaScript Badge</h4>
+                <p>Functions, DOM, Logic Building</p>
+            </div>
+
+            <div class="badge-item">
+                <img src="./Assets/badge-img/badge-3.png" alt="">
+                <h4>React Component Badge</h4>
+                <p>Reusable UI Components</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <div id="certifications" class="tab-content">
+        <h2>Certifications</h2>
+        <p class="tab-para">
+            These certifications show verified achievements from training institutes.
+        </p>
+
+        <div class="cert-cont">
+            <div class="cert-item">
+                <img src="./Assets/badges-certification/Blue and White Geometric Professional Completion Certificate.jpg" alt="">
+                <h4>Web Development Certificate</h4>
+                <p>HTML, CSS, JS + Projects</p>
+            </div>
+
+            <div class="cert-item">
+                <img src="./Assets/badges-certification/Blue and White Geometric Professional Completion Certificate.png" alt="">
+                <h4>JavaScript Specialist</h4>
+                <p>Advanced JS & Projects</p>
+            </div>
+
+            <div class="cert-item">
+                <img src="./Assets/cert-img/cert-3.png" alt="">
+                <h4>React Certificate</h4>
+                <p>React Apps, Hooks, Components</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
         <!-- gallery -->
         <!-- contact me -->
 
-           section.contact>ul>(li*4)>.div+(li*4)
+  <section class="contact" id="contact">
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Contact Me</h2>
+            <p>For any inquiries or collaboration opportunities, feel free to reach out to me.</p>
+            <div class="contact-details">
+                <p><strong>Email:</strong> <a href="mailto:sadiqkhan@example.com">saiqkhan7777@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+923001234567">+92 349 8317682</a></p>
+                <p><strong>Location:</strong> Karachi, Pakistan</p>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form id="contactForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
 
         <!-- footer -->
 
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- About / Logo -->
+        <div class="footer-about">
+            <h3>Sadiq Khan</h3>
+            <p>Frontend Developer | Modern Web & App Developer</p>
+            <div class="footer-socials">
+                <a href="https://github.com/sadiqkhan-dev" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sadiqkhan-dev" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/sadiqkhan-dev" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="mailto:sadiqkhan@example.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
 
+        <!-- Quick Links -->
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#aboutus">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#badg-cert">Badges</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-contact">
+            <h4>Contact Info</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan</p>
+            <p><i class="fas fa-phone"></i> +92 349 8317682</p>
+            <p><i class="fas fa-envelope"></i> saiqkhan7777@gmail.com</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Sadiq Khan. All rights reserved. ❤</p>
+    </div>
+</footer>
+
+
+
+
+    <script src="./sadiqkhan.js"></script>
 
         <!-- bootstrap js Link  -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
             crossorigin="anonymous"></script>
+
 </body>
 
 </html>
