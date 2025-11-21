@@ -471,6 +471,23 @@ a {
 .project-cont {
     display: flex;
     justify-content: center;
-    gap: 60px;
+    gap: 30px;
     margin-top: 40px;
+}
+
+.pro-card1 .pro-sec, .pro-card2 .pro-sec, .pro-card3 .pro-sec, .pro-card4 .pro-sec {
+    /* padding: 20px; */
+    padding-top: 20px;
+    font-size: var(--small-text);
+}
+
+/* .pro-card1, .pro-main .pro-card2, .pro-main .pro-card3, .pro-main .pro-card4 .pro-main {
+    padding-top: 20px;
+    font-size: var(--small-text);
+} */
+
+.pro-card1 img, .pro-card2 img, .pro-card3 img, .pro-card4 img {
+    width: 250px;
+    height: 250px;
+    border-radius: var(--fw-heading);
 }
