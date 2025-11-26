@@ -1,8 +1,26 @@
 /* ================================
    Global Root Variables
 ================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
-  /* Colors */
+    --bg: #060616;
+    --panel: #0e1120;
+    --muted: #b1bddf;
+    --neon: #0ab1ff;
+    --accent: #0af0ff;
+    --glass: rgba(255, 255, 255, 0.03);
+    --radius: 14px;
+    --shadow: 0 6px 22px rgba(10, 177, 255, 0.06);
+    --max-width: 1150px;
+    --gap: 24px;
+    --fw-heading: 700;
+    --fw-body: 400;
+     /* Colors */
   --primary-color: #4b7bec;
   --primary-dark: #3867d6;
   --secondary-color: #a5b1c2;
@@ -42,27 +60,6 @@
   --transition: 0.3s ease-in-out;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --bg: #060616;
-    --panel: #0e1120;
-    --muted: #b1bddf;
-    --neon: #0ab1ff;
-    --accent: #0af0ff;
-    --glass: rgba(255, 255, 255, 0.03);
-    --radius: 14px;
-    --shadow: 0 6px 22px rgba(10, 177, 255, 0.06);
-    --max-width: 1150px;
-    --gap: 24px;
-    --fw-heading: 700;
-    --fw-body: 400;
-}
-
 /* Reset */
 * {
     box-sizing: border-box;
@@ -93,6 +90,7 @@ li {
     border-radius: 10px;
     background-color: #000 !important
 } */
+ 
 
 img {
     width: 100px;
@@ -123,6 +121,54 @@ a {
   transition: var(--transition);
   font-family: var(--font-family);
 }
+
+/* floating buttons */
+
+  .floating-home {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 9999;
+        }
+
+        .floating-home a {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .floating-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9999;
+        }
+
+        .floating-button a {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .floating-button {
+                display: none;
+            }
+        }
 
 .navbar {
     position: fixed;
@@ -659,7 +705,7 @@ a {
 
 .contact {
     padding: 80px 20px;
-    background-color: #f9f9f9;
+    background-color: var(--gradient-dark);
 }
 
 .contact-container {
@@ -679,6 +725,7 @@ a {
 .contact-info h2 {
     font-size: 2.5rem;
     margin-bottom: 15px;
+    color: #fff;
 }
 
 .contact-info p {
@@ -701,6 +748,15 @@ a {
     gap: 15px;
 }
 
+.contact-form label {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 600;
+    
+}
+
 .contact-form input,
 .contact-form textarea {
     padding: 12px;
@@ -708,6 +764,9 @@ a {
     border: 1px solid #ccc;
     font-size: 1rem;
     width: 100%;
+    outline: none;
+    resize: none;
+    transition: 0.3s;
 }
 
 .contact-form button {
